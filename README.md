@@ -1,13 +1,17 @@
-<<<<<<< HEAD
-# CodeAnt-AI
-CodeAnt assignment
-=======
-# React + Vite
+# **CodeAnt-AI Assignment**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the CodeAnt Frontend Developer Intern Assignment. It is a **ReactJS** project built using **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> b30f347 (Initial commit)
+## **Project Description**
+This project demonstrates the implementation of a React application using Vite for fast development and hot module replacement (HMR). Follow the instructions below to set up and run the project on your local server.
+
+---
+
+## **Steps to Run Locally**
+
+### 1. **Clone the Repository**
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/ZodiacT3rr0r/CodeAnt-AI.git
