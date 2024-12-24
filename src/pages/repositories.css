@@ -1,0 +1,248 @@
+.repositories {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  border: 1px solid #E9EAEB;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 116px;
+  padding: 20px 24px;
+  gap: 16px;
+  border-bottom: 1px solid #E9EAEB;
+}
+
+.title_buttons {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.text {
+  height: 56px;
+  gap: 4px;
+}
+
+.title {
+  color: #181D27;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.count {
+  color: #414651;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.buttons {
+  width: 297px;
+  height: 40px;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.refresh-button {
+  width: 127px;
+  height: 40px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #414651;
+}
+
+.refresh-button:focus, .refresh-button:hover {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #D5D7DA;
+}
+
+.refresh-button:active {
+  background-color: #D5D7DA;
+}
+
+.add-button {
+  width: 158px;
+  height: 40px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: #1570EF;
+  color: #FFFFFF;
+}
+
+.add-button:focus, .add-button:hover {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.add-button:active {
+  background-color: #3283f4;
+}
+
+.search-bar {
+  width: 366px;
+  height: 20px;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #414651;
+  background-color: #FFFFFF;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #414651;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 366px;
+}
+
+
+.search-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 14px; /* Position of the icon */
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.7188 19.8086C18.0703 20.1602 18.0703 20.6875 17.7188 21.0039C17.5781 21.1797 17.3672 21.25 17.1562 21.25C16.9102 21.25 16.6992 21.1797 16.5234 21.0039L11.8125 16.293C10.5469 17.3125 8.96484 17.875 7.27734 17.875C3.26953 17.875 0 14.6055 0 10.5625C0 6.55469 3.23438 3.25 7.27734 3.25C11.2852 3.25 14.5898 6.55469 14.5898 10.5625C14.5898 12.2852 14.0273 13.8672 13.0078 15.0977L17.7188 19.8086ZM1.6875 10.5625C1.6875 13.6914 4.18359 16.1875 7.3125 16.1875C10.4062 16.1875 12.9375 13.6914 12.9375 10.5625C12.9375 7.46875 10.4062 4.9375 7.3125 4.9375C4.18359 4.9375 1.6875 7.46875 1.6875 10.5625Z' fill='%23414651'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+
+.search-bar:focus {
+  outline: none;
+}
+
+.repository-list {
+  color: #181D27;
+  font-weight: 500;
+}
+
+.repo-details-wrapper {
+  width: 100%;
+  height: 58px;
+  padding: 24px 0;
+  border-bottom: 1px solid #D5D7DA;
+}
+
+.repo-details {
+  width: 414.5px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.last-repo {
+  border-bottom: none;
+}
+
+.name {
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  height: 24px;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 400;
+  color: #175CD3;
+  border: 1px solid #B2DDFF;
+  background-color: #EFF8FF;
+  border-radius: 12px;
+  padding: 2px 10px 2px 8px;
+}
+
+.details {
+  display: flex;
+  gap: 40px;
+}
+
+.details p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.lang::after {
+  content: '';
+  display: inline-block;
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  background-color: #1570EF; 
+  margin-left: 8px;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 800px) {
+
+  .repositories {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .title_buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header {
+    height: 168px;
+    width: inherit;
+    padding: 20px 16px;
+  }
+
+  .search-wrapper {
+    width: inherit;
+  }
+
+  .search-bar {
+    width: 85%;
+    min-width: 0;
+  }
+
+  .repo-details-wrapper {
+    padding: 16px 0;
+  }
+
+  .repo-details {
+    width: max-content;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .details {
+    gap: 24px;
+  }
+
+  .details p {
+    font-size: 14px;
+  }
+}
